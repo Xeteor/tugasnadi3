@@ -14,6 +14,11 @@
 			padding: 0;
 			text-align: center;
 		}
+		.tenor-gif-embed {
+	  display: inline-block;
+	  transform: scale(0.5); 
+	  transform-origin: center;
+    }
 		.container {
 			transition: opacity 0.5s, transform 0.5s;
 		}
@@ -45,17 +50,32 @@
 			border-radius: 5px;
 			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 		}
+		button, a {
+			background: #0073e6;
+			color: white;
+			border: none;
+			padding: 10px 15px;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: 0.3s;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+		}
+		button:hover, a:hover {
+			background: #005bb5;
+			box-shadow: 0 0 10px rgba(0, 115, 230, 0.8);
+		}
 	</style>
 </head>
 <body>
-	<script>alert("Anda Telah Digodam, Sila beri duit raya ke saya ")</script>
 	<button onclick="toggleContent()">Toggle Content</button>
 	<div class="container" id="content">
 		<div class="header">Selamat Datang ke Landing Page Saya</div>
 		<div class="section">
 			<h2>About Me</h2>
-			<img src="https://h.top4top.io/p_3340y8k2e1.jpg" alt="Profile Picture" style="max-width: 100%; border-radius: 8px;">
-			<p class="small-text">Image: Lord of Mysteries</p>
+			<div class="tenor-gif-embed" data-postid="21384674" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/orv-omniscient-reader-omniscient-readers-viewpoint-dokja-kim-gif-21384674">Orv Omniscient Reader GIF</a>from <a href="https://tenor.com/search/orv-gifs">Orv GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+			<p class="small-text">Image: Omniscient Reader Viewpoint</p>
 			<button onclick="document.getElementById('bg-music').play()">▶ Play Music</button>
 			<div class="data"><strong>Nama:</strong> Awangmu Lai Afiz Asril Bin Awang Faizal</div>
 			<div class="data"><strong>Dari pusat nadi mana:</strong> NADI RPR Sibujaya</div>
@@ -66,7 +86,6 @@
 		<div class="section">
 			<h2>Google Drive Hacking book</h2>
 			<a target="blank" href="https://drive.google.com/drive/folders/1RdqxojDVV7kKCRZ2QoFFOz0dNslreMOi">Google Drive</a>
-
 		</div>
 		<div class="footer">© 2025 AwangAsril</div>
 	</div>
